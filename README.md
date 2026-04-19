@@ -189,7 +189,7 @@ Source modules live in `src/` — see [CONTRIBUTING.md](CONTRIBUTING.md) for dev
 
 ## License
 
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free for personal, non-commercial use. For commercial licensing, contact alice@it-link.ro.
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free for personal, non-commercial use. For commercial licensing, contact alice@it-link.net.
 
 ## Author
 
