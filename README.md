@@ -44,6 +44,7 @@ On first run, `alice.conf` is generated with sensible defaults. Models and datas
 ### Docker
 
 ```bash
+python3 builder.py --no-venv
 docker compose up --build -d
 ```
 
