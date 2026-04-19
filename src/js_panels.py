@@ -1,0 +1,11 @@
+<script>
+%%JS_PANELS%%
+</script>
+<script>
+%%JS_TRAINER%%
+</script>
+<script>
+%%JS_SETTINGS%%
+</script>
+</body></html>
+"""
