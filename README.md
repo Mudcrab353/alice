@@ -13,6 +13,8 @@
 
 ---
 
+![Viewer — AI Detection](screenshots/viewer.png)
+
 ## Why?
 
 I needed a tool to train a YOLO model for my cameras, using my own images, with the specific angles and scenarios around my house.
@@ -52,6 +54,18 @@ Edit `docker-compose.yml` to map your Frigate media, datasets, and models direct
 ### Viewer — Dataset Mode
 Browse and annotate YOLO bounding boxes with a full canvas editor — draw, resize, move, delete, undo. Filter by split (train / val / empty) or by class. Gallery grid view, keyboard shortcuts, right-click context menus.
 
+![Viewer — Edit Panel](screenshots/viewer-edit.png)
+
+### Gallery & Dataset Stats
+Gallery grid view with thumbnail previews, split badges, and box counts. Dataset statistics panel shows total images, train/val distribution, annotation coverage, and class distribution.
+
+![Gallery — Stats](screenshots/gallery-stats.png)
+
+### Duplicate Detection
+Perceptual hashing (pHash) with DCT-based 64-bit hashes. Multiprocessing-accelerated computation. Side-by-side comparison. Box-similarity dedup per camera. NMS cleanup for overlapping same-class boxes.
+
+![Viewer — Duplicate Detection](screenshots/viewer-dupes.png)
+
 ### Viewer — Live Mode
 Browse Frigate NVR event snapshots in real-time. Filter by camera and time window. Transfer snapshots directly into your training dataset with automatic WebP → JPG conversion.
 
@@ -60,9 +74,6 @@ Frame-by-frame analysis of Frigate video exports. Seekbar, step controls, adjust
 
 ### AI Analysis
 Run YOLO inference on any image across all three modes. Merge detected boxes into annotations (dedup by IoU > 0.5). Preview mode shows detections without saving. Live detection auto-runs as you navigate.
-
-### Duplicate Detection
-Perceptual hashing (pHash) with DCT-based 64-bit hashes. Multiprocessing-accelerated computation. Side-by-side comparison. Box-similarity dedup per camera. NMS cleanup for overlapping same-class boxes.
 
 ### Training Pipeline
 
@@ -78,8 +89,22 @@ Five-step pipeline — each step toggleable, runnable individually or as a seque
 
 All steps log to the Logs tab with COMPLETED / FAILED / STOPPED status.
 
+![Training Pipeline](screenshots/trainer.png)
+
 ### Settings
+
 All configuration in `alice.conf` — editable from the web UI or directly in the file. Built-in dependency checker with one-click install. Model downloader for YOLO11 and YOLOv8 variants.
+
+<table>
+<tr>
+<td width="50%"><b>Paths</b><br><img src="screenshots/settings-paths.png" alt="Settings — Paths"></td>
+<td width="50%"><b>AI Models</b><br><img src="screenshots/settings-ai.png" alt="Settings — AI"></td>
+</tr>
+<tr>
+<td width="50%"><b>Training</b><br><img src="screenshots/settings-training.png" alt="Settings — Training"></td>
+<td width="50%"><b>System & Dependencies</b><br><img src="screenshots/settings-system.png" alt="Settings — System"></td>
+</tr>
+</table>
 
 ## Requirements
 
