@@ -3,6 +3,12 @@
 All notable changes to ALICE will be documented in this file.
 Entries are ordered newest first.
 
+## [0.5.5] - 19-04-2026
+
+### Fixed
+- Added empty alice.conf for docker compatibility.
+
+
 ## [0.5.4] - 19-04-2026
 
 ### Fixed
