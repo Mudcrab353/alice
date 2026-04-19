@@ -25,7 +25,10 @@ If you find it useful — enjoy. If not, well... cry me a river! :)
 
 ```bash
 # Build and set up virtual environment
+
 python3 builder.py
+
+On Debian/Ubuntu, you may also need: `sudo apt install python3-venv`
 
 # Run
 ./alice.py
