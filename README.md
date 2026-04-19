@@ -44,7 +44,7 @@ On first run, `alice.conf` is generated with sensible defaults. Models and datas
 ### Docker
 
 ```bash
-docker compose up -d
+docker compose up --build -d
 ```
 
 Edit `docker-compose.yml` to map your Frigate media, datasets, and models directories. See [Docker Setup](#docker-setup) below.
