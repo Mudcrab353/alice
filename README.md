@@ -213,9 +213,16 @@ Source modules live in `src/` — see [CONTRIBUTING.md](CONTRIBUTING.md) for dev
 | `Ctrl+Scroll` | Zoom |
 | `Space` | Play/pause (video) |
 
+## Support
+
+If you find ALICE useful, you can buy me a coffee:
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=988G9YXYX78RG)
+
 ## License
 
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — free for personal, non-commercial use. For commercial licensing, contact alice@it-link.net.
+
 
 ## Author
 
