@@ -3,6 +3,12 @@
 All notable changes to ALICE will be documented in this file.
 Entries are ordered newest first.
 
+## [0.5.4] - 19-04-2026
+
+### Fixed
+- F-string nested quotes compatibility for Python < 3.12 (Docker fix)
+
+
 ## [0.5.3] - 17-04-2026
 
 ### Fixed

@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     # Load or generate config
     if not os.path.exists(STATE["CONF_PATH"]):
-        print(f"  Config not found: {STATE["CONF_PATH"]}")
+        print(f"  Config not found: {STATE['CONF_PATH']}")
         print(f"  Generating default alice.conf...")
         generate_default_conf(STATE["CONF_PATH"])
         STATE["FIRST_RUN"] = True
@@ -94,8 +94,8 @@ if __name__ == "__main__":
     print(f"\n  Alice v{VERSION}")
     if sys.prefix != sys.base_prefix:
         print(f"  Python: {sys.executable} (venv)")
-    print(f"  Config: {os.path.abspath(STATE["CONF_PATH"])}")
-    print(f"  Dataset: {STATE["DATASET_DIR"]}")
+    print(f"  Config: {os.path.abspath(STATE['CONF_PATH'])}")
+    print(f"  Dataset: {STATE['DATASET_DIR']}")
 
     IMAGE_LIST.clear(); IMAGE_LIST.extend(build_image_list())
     sort_image_list()

@@ -61,7 +61,7 @@ def trainer_export_dataset(max_images=0):
     _log(f"EXPORT: Starting")
     _log(f"  Frigate DB: {frigate_db}")
     _log(f"  Clips dir: {clips_dir}")
-    _log(f"  Dataset: {STATE["DATASET_DIR"]}")
+    _log(f"  Dataset: {STATE['DATASET_DIR']}")
 
     _ss_reset("export", running=True, progress=0, current=0, total=0, message="Loading Frigate DB...")
 
@@ -805,7 +805,7 @@ def _write_dataset_yaml():
     """Write dataset.yaml with all 80 COCO classes."""
     yaml_path = os.path.join(STATE["DATASET_DIR"], "dataset.yaml")
     with open(yaml_path, "w") as f:
-        f.write(f"path: {STATE["DATASET_DIR"]}\n")
+        f.write(f"path: {STATE['DATASET_DIR']}\n")
         f.write("train: images/train\n")
         f.write("val: images/val\n\n")
         f.write("names:\n")
