@@ -13,7 +13,8 @@ RUN pip install --no-cache-dir \
     ultralytics \
     opencv-python-headless \
     numpy \
-    inotify
+    inotify \
+    python3-venv
 
 COPY builder.py .
 RUN python3 builder.py
