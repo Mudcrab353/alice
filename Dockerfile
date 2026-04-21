@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir \
 COPY builder.py .
 RUN python builder.py
 
-COPY alice.py .
+# COPY alice.py .
 
 EXPOSE 8080
 
