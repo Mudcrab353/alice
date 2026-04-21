@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir \
     numpy \
     inotify
 
+COPY builder.py .
+RUN python builder.py
+
 COPY alice.py .
 
 EXPOSE 8080
