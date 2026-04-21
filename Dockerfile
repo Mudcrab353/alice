@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir \
     inotify
 
 COPY builder.py .
-RUN python builder.py
+RUN python3 builder.py
 
 # COPY alice.py .
 
